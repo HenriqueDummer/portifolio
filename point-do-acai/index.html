@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <!--
+  PERSONALIZE AQUI antes de publicar para um cliente real:
+  1. Numero de WhatsApp (busque por "5591999999999" e troque em todos os locais)
+  2. Link do cardapio digital (busque por "https://www.anota.ai/" e troque pelo link real do cliente)
+  3. Endereco e horario de funcionamento (secao #localizacao e rodape)
+  4. Coordenadas do mapa (iframe da secao #localizacao) e bloco "geo" do JSON-LD abaixo
+  5. Links de redes sociais (Instagram/Facebook no rodape e botao flutuante do WhatsApp)
+  6. Nome do negocio, textos, tamanhos/complementos e precos do cardapio (mantenha o HTML visivel e o JSON-LD sincronizados)
+  7. Creditos de desenvolvimento no rodape
+-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+            document.documentElement.className += " js";
+        </script>
+        <title>Point do Açaí - Açaí Tradicional Paraense em Belém</title>
+        <meta
+            name="description"
+            content="Point do Açaí: açaí de verdade direto do Pará, montado com os complementos que você escolher. Peça em poucos cliques pelo cardápio digital."
+        />
+        <meta name="theme-color" content="#d81b5f" />
+        <meta property="og:title" content="Point do Açaí" />
+        <meta
+            property="og:description"
+            content="Açaí paraense de verdade, montado do seu jeito. Peça pelo nosso cardápio digital."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="public/tigela.png" />
+        <link
+            rel="icon"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23133328'/%3E%3Ccircle cx='50' cy='46' r='24' fill='%23d81b5f'/%3E%3Cpath d='M30 62c8 10 32 10 40 0' stroke='%23f5f8ef' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"
+        />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Restaurant",
+                "name": "Point do Açaí",
+                "servesCuisine": ["Açaí", "Sorvetes"],
+                "priceRange": "R$14,90 - R$29,90",
+                "telephone": "+5591999999999",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Travessa Exemplo, 456",
+                    "addressLocality": "Belém",
+                    "addressRegion": "PA",
+                    "addressCountry": "BR"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": -1.4558,
+                    "longitude": -48.4902
+                },
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday"
+                        ],
+                        "opens": "12:00",
+                        "closes": "22:00"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": ["Sunday"],
+                        "opens": "12:00",
+                        "closes": "20:00"
+                    }
+                ],
+                "hasMenu": {
+                    "@type": "Menu",
+                    "hasMenuSection": [
+                        {
+                            "@type": "MenuSection",
+                            "name": "Tamanhos",
+                            "hasMenuItem": [
+                                {
+                                    "@type": "MenuItem",
+                                    "name": "Açaí 300ml",
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "14.90",
+                                        "priceCurrency": "BRL"
+                                    }
+                                },
+                                {
+                                    "@type": "MenuItem",
+                                    "name": "Açaí 500ml",
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "18.90",
+                                        "priceCurrency": "BRL"
+                                    }
+                                },
+                                {
+                                    "@type": "MenuItem",
+                                    "name": "Açaí 700ml",
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "23.90",
+                                        "priceCurrency": "BRL"
+                                    }
+                                },
+                                {
+                                    "@type": "MenuItem",
+                                    "name": "Açaí 1L",
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "29.90",
+                                        "priceCurrency": "BRL"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "@type": "MenuSection",
+                            "name": "Complementos",
+                            "description": "Cada complemento além dos grátis inclusos no tamanho custa R$ 1,50.",
+                            "hasMenuItem": [
+                                {
+                                    "@type": "MenuItem",
+                                    "name": "Granola",
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "1.50",
+                                        "priceCurrency": "BRL"
+                                    }
+                                },
+                                {
+                                    "@type": "MenuItem",
+                                    "name": "Leite em pó",
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "1.50",
+                                        "priceCurrency": "BRL"
+                                    }
+                                },
+                                {
+                                    "@type": "MenuItem",
+                                    "name": "Leite condensado",
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "1.50",
+                                        "priceCurrency": "BRL"
+                                    }
+                                },
+                                {
+                                    "@type": "MenuItem",
+                                    "name": "Morango",
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "1.50",
+                                        "priceCurrency": "BRL"
+                                    }
+                                },
+                                {
+                                    "@type": "MenuItem",
+                                    "name": "Banana",
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "1.50",
+                                        "priceCurrency": "BRL"
+                                    }
+                                },
+                                {
+                                    "@type": "MenuItem",
+                                    "name": "Kiwi",
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "1.50",
+                                        "priceCurrency": "BRL"
+                                    }
+                                },
+                                {
+                                    "@type": "MenuItem",
+                                    "name": "Paçoca",
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "1.50",
+                                        "priceCurrency": "BRL"
+                                    }
+                                },
+                                {
+                                    "@type": "MenuItem",
+                                    "name": "Nutella",
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "1.50",
+                                        "priceCurrency": "BRL"
+                                    }
+                                },
+                                {
+                                    "@type": "MenuItem",
+                                    "name": "Ovomaltine",
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "1.50",
+                                        "priceCurrency": "BRL"
+                                    }
+                                },
+                                {
+                                    "@type": "MenuItem",
+                                    "name": "Mel",
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "1.50",
+                                        "priceCurrency": "BRL"
+                                    }
+                                },
+                                {
+                                    "@type": "MenuItem",
+                                    "name": "Castanha de caju",
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "1.50",
+                                        "priceCurrency": "BRL"
+                                    }
+                                },
+                                {
+                                    "@type": "MenuItem",
+                                    "name": "Gotas de chocolate",
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "1.50",
+                                        "priceCurrency": "BRL"
+                                    }
+                                },
+                                {
+                                    "@type": "MenuItem",
+                                    "name": "Jujuba",
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "1.50",
+                                        "priceCurrency": "BRL"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <a href="#conteudo" class="skip-link">Ir para o conteúdo</a>
+
+        <header class="header" id="header">
+            <div class="container header__inner">
+                <a href="#inicio" class="logo">Point <span>do Açaí</span></a>
+
+                <nav class="nav" id="nav">
+                    <ul class="nav__list">
+                        <li><a href="#inicio" class="nav__link">Início</a></li>
+                        <li><a href="#sobre" class="nav__link">Sobre</a></li>
+                        <li>
+                            <a href="#galeria" class="nav__link">Galeria</a>
+                        </li>
+                        <li>
+                            <a href="#cardapio" class="nav__link">Cardápio</a>
+                        </li>
+                        <li>
+                            <a href="#depoimentos" class="nav__link"
+                                >Depoimentos</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#localizacao" class="nav__link"
+                                >Localização</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+
+                <a
+                    class="btn btn--primary nav__cta"
+                    href="https://www.anota.ai/"
+                    target="_blank"
+                    rel="noopener"
+                    >Pedir Agora</a
+                >
+
+                <button
+                    class="nav__toggle"
+                    id="navToggle"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    aria-controls="nav"
+                >
+                    <svg
+                        class="icon icon--menu"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                    >
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg
+                        class="icon icon--close"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                    >
+                        <line x1="5" y1="5" x2="19" y2="19"></line>
+                        <line x1="19" y1="5" x2="5" y2="19"></line>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <main id="conteudo">
+            <!-- HERO -->
+            <section id="inicio" class="hero">
+                <div class="hero__blob hero__blob--1" aria-hidden="true"></div>
+                <div class="hero__blob hero__blob--2" aria-hidden="true"></div>
+                <div class="container hero__grid">
+                    <div class="hero__content">
+                        <p class="eyebrow">Direto do Pará desde 2016</p>
+                        <h1 class="hero__title">
+                            Açaí de verdade, com <em>alma</em> paraense.
+                        </h1>
+                        <p class="hero__subtitle">
+                            Fruta selecionada direto do Pará, batida na hora e
+                            montada com os complementos que você escolher.
+                        </p>
+                        <div class="hero__actions">
+                            <a
+                                class="btn btn--primary btn--lg"
+                                href="https://www.anota.ai/"
+                                target="_blank"
+                                rel="noopener"
+                                >Pedir Agora</a
+                            >
+                            <a class="btn btn--ghost btn--lg" href="#cardapio"
+                                >Ver cardápio</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="hero__visual reveal" aria-hidden="true">
+                        <div class="hero__visual-ring"></div>
+                        <img
+                            class="hero__bowl"
+                            src="public/tigela.png"
+                            alt=""
+                            loading="eager"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- SOBRE -->
+            <section id="sobre" class="sobre">
+                <div class="container sobre__text">
+                    <h2 class="section__title section__title--inverse">
+                        Mais que um açaí, uma tradição da Amazônia.
+                    </h2>
+                    <p class="sobre__body">
+                        Fundado em 2016, o Point do Açaí nasceu da vontade de
+                        trazer o verdadeiro sabor do açaí paraense para o dia a
+                        dia da cidade, sem conservantes e sem xarope, só fruta
+                        de verdade batida na hora.
+                    </p>
+                    <p class="sobre__body">
+                        Cada tigela é montada com cuidado, na quantidade que
+                        você quiser, para você aproveitar do seu jeito, na
+                        medida certa.
+                    </p>
+                </div>
+                <div class="sobre__photo reveal">
+                    <img
+                        src="public/banner.jpg"
+                        alt="Tigela de açaí"
+                        loading="lazy"
+                    />
+                </div>
+            </section>
+
+            <!-- GALERIA -->
+            <section id="galeria" class="section galeria">
+                <div class="container">
+                    <h2 class="section__title reveal">Galeria</h2>
+                    <p class="section__subtitle reveal">
+                        Um pouco do nosso açaí e do nosso cantinho em Belém.
+                    </p>
+                </div>
+
+                <div class="carousel reveal" id="carousel">
+                    <div class="carousel__viewport" id="carouselViewport">
+                        <ul class="carousel__track" id="carouselTrack">
+                            <li class="carousel__slide">
+                                <img
+                                    src="public/acai_1.jpg"
+                                    alt="Açaí com cobertura de Nutella, chantilly e morango"
+                                    loading="lazy"
+                                />
+                            </li>
+                            <li class="carousel__slide">
+                                <img
+                                    src="public/acai_2.jpg"
+                                    alt="Açaí com morango picado, kiwi e confeitos coloridos"
+                                    loading="lazy"
+                                />
+                            </li>
+                            <li class="carousel__slide">
+                                <img
+                                    src="public/acai_3.jpg"
+                                    alt="Açaí com granola e banana"
+                                    loading="lazy"
+                                />
+                            </li>
+                            <li class="carousel__slide">
+                                <img
+                                    src="public/acai_4.jpg"
+                                    alt="Açaí com granola e banana, servido no balcão"
+                                    loading="lazy"
+                                />
+                            </li>
+                            <li class="carousel__slide">
+                                <img
+                                    src="public/acai_5.jpg"
+                                    alt="Açaí com banana em rodelas, servido no copo"
+                                    loading="lazy"
+                                />
+                            </li>
+                            <li class="carousel__slide">
+                                <img
+                                    src="public/acai_6.jpg"
+                                    alt="Açaí com banana em rodelas, servido no copo"
+                                    loading="lazy"
+                                />
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="carousel__arrow carousel__arrow--prev"
+                        id="carouselPrev"
+                        aria-label="Foto anterior"
+                    >
+                        <svg
+                            class="icon"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <button
+                        type="button"
+                        class="carousel__arrow carousel__arrow--next"
+                        id="carouselNext"
+                        aria-label="Próxima foto"
+                    >
+                        <svg
+                            class="icon"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M9 6l6 6-6 6" />
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <!-- CARDÁPIO -->
+            <section id="cardapio" class="section cardapio">
+                <div class="container">
+                    <h2 class="section__title reveal">Tamanhos</h2>
+                    <p class="section__subtitle reveal">
+                        Escolha o tamanho, o resto é por sua conta.
+                    </p>
+
+                    <div class="menu-bento reveal">
+                        <article class="menu-feature">
+                            <span class="menu-feature__badge">Mais pedido</span>
+                            <div class="menu-feature__container">
+                                <div class="menu-feature__body">
+                                    <span class="menu-feature__size"
+                                        >500ml</span
+                                    >
+                                    <span class="menu-feature__free"
+                                        >3 complementos grátis</span
+                                    >
+                                    <span class="menu-feature__price"
+                                        >R$ 18,90</span
+                                    >
+                                </div>
+                                <img
+                                    class="menu-feature__cup"
+                                    src="public/acai.webp"
+                                    alt="Açaí de 500ml com cobertura"
+                                    loading="lazy"
+                                />
+                            </div>
+                        </article>
+
+                        <div class="size-list">
+                            <div class="size-row">
+                                <span class="size-row__icon size-row__icon--sm"
+                                    ><img
+                                        src="public/acai.webp"
+                                        alt=""
+                                        aria-hidden="true"
+                                        loading="lazy"
+                                /></span>
+                                <span class="size-row__info">
+                                    <span class="size-row__size">300ml</span>
+                                    <span class="size-row__free"
+                                        >2 complementos grátis</span
+                                    >
+                                </span>
+                                <span class="size-row__price">R$ 14,90</span>
+                            </div>
+                            <div class="size-row">
+                                <span class="size-row__icon size-row__icon--md"
+                                    ><img
+                                        src="public/acai.webp"
+                                        alt=""
+                                        aria-hidden="true"
+                                        loading="lazy"
+                                /></span>
+                                <span class="size-row__info">
+                                    <span class="size-row__size">700ml</span>
+                                    <span class="size-row__free"
+                                        >4 complementos grátis</span
+                                    >
+                                </span>
+                                <span class="size-row__price">R$ 23,90</span>
+                            </div>
+                            <div class="size-row">
+                                <span class="size-row__icon size-row__icon--lg"
+                                    ><img
+                                        src="public/acai.webp"
+                                        alt=""
+                                        aria-hidden="true"
+                                        loading="lazy"
+                                /></span>
+                                <span class="size-row__info">
+                                    <span class="size-row__size">1L</span>
+                                    <span class="size-row__free"
+                                        >5 complementos grátis</span
+                                    >
+                                </span>
+                                <span class="size-row__price">R$ 29,90</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="cardapio__group-title reveal">Complementos</h3>
+                    <p class="cardapio__note reveal">
+                        Complemento extra, além dos grátis inclusos no tamanho:
+                        <strong>+ R$ 1,50</strong> cada.
+                    </p>
+                    <div class="topping-cloud reveal">
+                        <span class="topping-pill">Granola</span>
+                        <span class="topping-pill">Leite em pó</span>
+                        <span class="topping-pill">Leite condensado</span>
+                        <span class="topping-pill">Morango</span>
+                        <span class="topping-pill">Banana</span>
+                        <span class="topping-pill">Kiwi</span>
+                        <span class="topping-pill">Paçoca</span>
+                        <span class="topping-pill">Nutella</span>
+                        <span class="topping-pill">Ovomaltine</span>
+                        <span class="topping-pill">Mel</span>
+                        <span class="topping-pill">Castanha de caju</span>
+                        <span class="topping-pill">Gotas de chocolate</span>
+                        <span class="topping-pill">Jujuba</span>
+                    </div>
+
+                    <div class="cardapio__cta reveal">
+                        <p class="cardapio__cta-title">
+                            Pronto para montar o seu?
+                        </p>
+                        <a
+                            class="btn btn--primary btn--lg"
+                            href="https://www.anota.ai/"
+                            target="_blank"
+                            rel="noopener"
+                            >Pedir Agora</a
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <!-- DEPOIMENTOS -->
+            <section id="depoimentos" class="section depoimentos">
+                <div class="container">
+                    <h2 class="section__title reveal">
+                        O que dizem nossos clientes
+                    </h2>
+
+                    <div class="depoimentos__grid reveal">
+                        <blockquote class="quote-feature">
+                            <p class="quote-feature__text">
+                                "Peço quase toda semana pelo cardápio digital.
+                                Chega rápido e exatamente como eu montei."
+                            </p>
+                            <footer class="quote-feature__author">
+                                Thiago R. <span>cliente desde 2021</span>
+                            </footer>
+                        </blockquote>
+
+                        <div class="quote-list">
+                            <article class="quote-row">
+                                <p class="quote-row__text">
+                                    "O açaí mais fresco que já provei na cidade.
+                                    Vem generoso nos complementos, sempre."
+                                </p>
+                                <p class="quote-row__author">
+                                    Marina L. <span>cliente desde 2020</span>
+                                </p>
+                            </article>
+                            <article class="quote-row">
+                                <p class="quote-row__text">
+                                    "Açaí de verdade, com gosto de Pará mesmo.
+                                    Virei cliente fiel depois da primeira
+                                    tigela."
+                                </p>
+                                <p class="quote-row__author">
+                                    Carla S. <span>cliente desde 2022</span>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- LOCALIZAÇÃO -->
+            <section id="localizacao" class="section localizacao">
+                <div class="container localizacao__grid">
+                    <div class="localizacao__info reveal">
+                        <h2 class="section__title">Onde estamos</h2>
+
+                        <ul class="info-list">
+                            <li>
+                                <svg
+                                    class="icon"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.6"
+                                >
+                                    <path
+                                        d="M12 21s-7-7.58-7-12a7 7 0 1 1 14 0c0 4.42-7 12-7 12z"
+                                    />
+                                    <circle cx="12" cy="9" r="2.5" />
+                                </svg>
+                                <span
+                                    >Travessa Exemplo, 456, Nazaré, Belém,
+                                    PA</span
+                                >
+                            </li>
+                            <li>
+                                <svg
+                                    class="icon"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.6"
+                                >
+                                    <path
+                                        d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.5 2.3.8 3.6.8.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3c.6 0 1 .4 1 1 0 1.3.3 2.5.8 3.6.1.3.1.7-.2 1l-2 2.2z"
+                                    />
+                                </svg>
+                                <span>(91) 99999-9999</span>
+                            </li>
+                            <li class="info-list__hours">
+                                <svg
+                                    class="icon"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.6"
+                                >
+                                    <circle cx="12" cy="12" r="9" />
+                                    <path d="M12 7v5l3 2" />
+                                </svg>
+                                <div class="hours">
+                                    <div>
+                                        <span>Terça a Sábado</span
+                                        ><span>12h às 22h</span>
+                                    </div>
+                                    <div>
+                                        <span>Domingo</span
+                                        ><span>12h às 20h</span>
+                                    </div>
+                                    <div>
+                                        <span>Segunda</span><span>Fechado</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="localizacao__actions">
+                            <a
+                                class="btn btn--primary"
+                                href="https://www.anota.ai/"
+                                target="_blank"
+                                rel="noopener"
+                                >Pedir Agora</a
+                            >
+                            <a
+                                class="btn btn--ghost"
+                                href="https://wa.me/5591999999999?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Point%20do%20A%C3%A7a%C3%AD."
+                                target="_blank"
+                                rel="noopener"
+                                >Falar no WhatsApp</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="localizacao__map reveal">
+                        <iframe
+                            title="Mapa de localização do Point do Açaí"
+                            src="https://www.google.com/maps?q=-1.4558,-48.4902&z=15&output=embed"
+                            width="100%"
+                            height="100%"
+                            style="border: 0"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        >
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__grid">
+                <div class="footer__col">
+                    <a href="#inicio" class="logo logo--footer"
+                        >Point <span>do Açaí</span></a
+                    >
+                    <p class="footer__text">
+                        Açaí de verdade, direto do Pará, desde 2016.
+                    </p>
+                    <div class="footer__social">
+                        <a
+                            href="https://instagram.com/"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="Instagram"
+                        >
+                            <svg
+                                class="icon"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.6"
+                            >
+                                <rect
+                                    x="3"
+                                    y="3"
+                                    width="18"
+                                    height="18"
+                                    rx="5"
+                                />
+                                <circle cx="12" cy="12" r="4" />
+                                <circle cx="17.2" cy="6.8" r="1" />
+                            </svg>
+                        </a>
+                        <a
+                            href="https://facebook.com/"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="Facebook"
+                        >
+                            <svg
+                                class="icon"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.6"
+                            >
+                                <circle cx="12" cy="12" r="9" />
+                                <path
+                                    d="M14 8.5h-1.5A1.5 1.5 0 0 0 11 10v2H9.5v2H11v5h2v-5h1.6l.4-2H13v-1.5c0-.4.3-.5.5-.5H14z"
+                                />
+                            </svg>
+                        </a>
+                        <a
+                            href="https://wa.me/5591999999999"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="WhatsApp"
+                        >
+                            <svg
+                                class="icon"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                            >
+                                <path
+                                    d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.9-1.3c1.5.8 3.3 1.3 5.1 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-3.2.8.9-3.1-.2-.3C3.7 14.5 3.2 13 3.2 12 3.2 7.1 7.1 3.2 12 3.2S20.8 7.1 20.8 12 16.9 20.2 12 20.2z"
+                                />
+                                <path
+                                    d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.2-.6.9-.8 1.1-.1.2-.3.2-.5.1-1.6-.8-2.6-1.4-3.7-3.1-.3-.4.3-.4.8-1.3.1-.2 0-.4-.1-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.8.1.2 1.9 3 4.7 4.1 2.3.9 2.7.7 3.2.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.4-.3z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#cardapio">Cardápio</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#localizacao">Localização</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>Travessa Exemplo, 456, Nazaré, Belém, PA</li>
+                        <li>(91) 99999-9999</li>
+                        <li>contato@pointdoacai.com.br</li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Horário</h4>
+                    <ul>
+                        <li>Terça a Sábado: 12h às 22h</li>
+                        <li>Domingo: 12h às 20h</li>
+                        <li>Segunda: Fechado</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="container footer__bottom-inner">
+                    <p>
+                        &copy; 2026 Point do Açaí. Todos os direitos reservados.
+                    </p>
+                    <p>Desenvolvido por <a href="#">Webify</a></p>
+                </div>
+            </div>
+        </footer>
+
+        <a
+            class="whatsapp-float"
+            href="https://wa.me/5591999999999?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Point%20do%20A%C3%A7a%C3%AD."
+            target="_blank"
+            rel="noopener"
+            aria-label="Fale conosco no WhatsApp"
+        >
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.9-1.3c1.5.8 3.3 1.3 5.1 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-3.2.8.9-3.1-.2-.3C3.7 14.5 3.2 13 3.2 12 3.2 7.1 7.1 3.2 12 3.2S20.8 7.1 20.8 12 16.9 20.2 12 20.2z"
+                />
+                <path
+                    d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.2-.6.9-.8 1.1-.1.2-.3.2-.5.1-1.6-.8-2.6-1.4-3.7-3.1-.3-.4.3-.4.8-1.3.1-.2 0-.4-.1-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.8.1.2 1.9 3 4.7 4.1 2.3.9 2.7.7 3.2.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.4-.3z"
+                />
+            </svg>
+        </a>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

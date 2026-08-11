@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!--
+  PERSONALIZE AQUI antes de publicar para um cliente real:
+  1. Número de WhatsApp (busque por "5511999999999" e troque em todos os locais)
+  2. Endereço e horário de funcionamento (seção #localizacao e rodapé)
+  3. Coordenadas do mapa (iframe da seção #localizacao)
+  4. Links de redes sociais (Instagram/Facebook no rodapé e botão flutuante)
+  5. Nome do negócio, textos e preços dos serviços
+  6. Créditos de desenvolvimento no rodapé
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.className += " js";</script>
+<title>Barbearia Império — Barbearia Clássica e Moderna</title>
+<meta name="description" content="Barbearia Império: cortes clássicos e modernos, barba na navalha e atendimento de respeito. Agende seu horário pelo WhatsApp.">
+<meta name="theme-color" content="#0e0e0e">
+<meta property="og:title" content="Barbearia Império">
+<meta property="og:description" content="Cortes clássicos e modernos, barba na navalha e atendimento de respeito.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230e0e0e'/%3E%3Cpath d='M20 68 L20 40 L36 54 L50 28 L64 54 L80 40 L80 68 Z' fill='%23c9a24b'/%3E%3Crect x='20' y='68' width='60' height='8' fill='%23c9a24b'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a href="#conteudo" class="skip-link">Ir para o conteúdo</a>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#inicio" class="logo">Barbearia <span>Império</span></a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="#inicio" class="nav__link">Início</a></li>
+        <li><a href="#servicos" class="nav__link">Serviços</a></li>
+        <li><a href="#sobre" class="nav__link">Sobre</a></li>
+        <li><a href="#galeria" class="nav__link">Galeria</a></li>
+        <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+        <li><a href="#localizacao" class="nav__link">Localização</a></li>
+      </ul>
+    </nav>
+
+    <a class="btn btn--primary nav__cta" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Imp%C3%A9rio." target="_blank" rel="noopener">
+      Agendar horário
+    </a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+      <svg class="icon icon--menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+      <svg class="icon icon--close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <line x1="5" y1="5" x2="19" y2="19"></line>
+        <line x1="19" y1="5" x2="5" y2="19"></line>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <p class="eyebrow">Barbearia clássica desde 2009</p>
+      <h1 class="hero__title">O corte certo para o seu <span>estilo.</span></h1>
+      <p class="hero__subtitle">Cortes clássicos e modernos, barba feita na navalha e um atendimento à altura do seu estilo. Na Barbearia Império, cada cliente é tratado como realeza.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary btn--lg" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Imp%C3%A9rio." target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.2-.6.9-.8 1.1-.1.2-.3.2-.5.1-1.6-.8-2.6-1.4-3.7-3.1-.3-.4.3-.4.8-1.3.1-.2 0-.4-.1-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.8.1.2 1.9 3 4.7 4.1 2.3.9 2.7.7 3.2.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.4-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.9-1.3c1.5.8 3.3 1.3 5.1 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-3.2.8.9-3.1-.2-.3C3.7 14.5 3.2 13 3.2 12 3.2 7.1 7.1 3.2 12 3.2S20.8 7.1 20.8 12 16.9 20.2 12 20.2z"/></svg>
+          Agendar pelo WhatsApp
+        </a>
+        <a class="btn btn--ghost btn--lg" href="#servicos">Ver serviços</a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__number">+15</span>
+          <span class="stat__label">anos de tradição</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">+5.000</span>
+          <span class="stat__label">clientes atendidos</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">4.9</span>
+          <span class="stat__label">avaliação média</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="section section--light services">
+    <div class="container">
+      <p class="eyebrow eyebrow--dark reveal">O que fazemos</p>
+      <h2 class="section__title reveal">Nossos Serviços</h2>
+      <p class="section__subtitle reveal">Cuidado e precisão em cada detalhe do seu visual.</p>
+
+      <div class="services__grid">
+        <article class="service reveal">
+          <span class="service__number">01</span>
+          <h3 class="service__title">Corte de Cabelo</h3>
+          <p class="service__desc">Cortes modernos e clássicos, do social ao degradê.</p>
+          <span class="service__price">R$ 45</span>
+        </article>
+        <article class="service reveal">
+          <span class="service__number">02</span>
+          <h3 class="service__title">Barba Tradicional</h3>
+          <p class="service__desc">Toalha quente, navalha e acabamento impecável.</p>
+          <span class="service__price">R$ 35</span>
+        </article>
+        <article class="service reveal">
+          <span class="service__number">03</span>
+          <h3 class="service__title">Corte + Barba</h3>
+          <p class="service__desc">O combo completo para um visual renovado.</p>
+          <span class="service__price">R$ 70</span>
+        </article>
+        <article class="service reveal">
+          <span class="service__number">04</span>
+          <h3 class="service__title">Sobrancelha</h3>
+          <p class="service__desc">Design e alinhamento na navalha ou pinça.</p>
+          <span class="service__price">R$ 15</span>
+        </article>
+        <article class="service reveal">
+          <span class="service__number">05</span>
+          <h3 class="service__title">Pigmentação</h3>
+          <p class="service__desc">Disfarce de falhas e realce para a barba.</p>
+          <span class="service__price">R$ 50</span>
+        </article>
+        <article class="service reveal">
+          <span class="service__number">06</span>
+          <h3 class="service__title">Corte Infantil</h3>
+          <p class="service__desc">Atendimento especial e paciente para os pequenos.</p>
+          <span class="service__price">R$ 35</span>
+        </article>
+      </div>
+
+      <p class="services__note reveal">Formas de pagamento: dinheiro, Pix e cartão.</p>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section section--dark about">
+    <div class="container about__grid">
+      <div class="about__content reveal">
+        <p class="eyebrow">Nossa história</p>
+        <h2 class="section__title">Mais que um corte, uma experiência.</h2>
+        <p class="about__text">Fundada em 2009, a Barbearia Império nasceu do desejo de resgatar a tradição das barbearias clássicas com o conforto e a técnica dos dias de hoje. Nossa equipe é formada por barbeiros apaixonados pelo que fazem, sempre atualizados com as últimas tendências em cortes e cuidados com a barba.</p>
+        <p class="about__text">Aqui, cada cliente é recebido com atenção, respeito e uma boa dose de bom humor. Sinta-se em casa — e saia se sentindo um rei.</p>
+
+        <ul class="checklist">
+          <li>Mais de 15 anos de experiência</li>
+          <li>Profissionais certificados e atualizados</li>
+          <li>Produtos de alta qualidade</li>
+          <li>Ambiente climatizado e descontraído</li>
+        </ul>
+      </div>
+
+      <div class="about__badge reveal" aria-hidden="true">
+        <div class="badge">
+          <span class="badge__since">Desde</span>
+          <span class="badge__year">2009</span>
+          <span class="badge__name">Barbearia Império</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="galeria" class="section section--light gallery">
+    <div class="container">
+      <p class="eyebrow eyebrow--dark reveal">Nosso trabalho</p>
+      <h2 class="section__title reveal">Galeria</h2>
+      <p class="section__subtitle reveal">Alguns dos estilos que já saíram de aqui.</p>
+
+      <div class="gallery__grid">
+        <div class="gallery__item reveal"><img src="public/corte_1.jpg" alt="Corte de cabelo" loading="lazy"></div>
+        <div class="gallery__item reveal"><img src="public/corte_2.jpg" alt="Corte de cabelo" loading="lazy"></div>
+        <div class="gallery__item reveal"><img src="public/corte_3.jpeg" alt="Corte de cabelo" loading="lazy"></div>
+        <div class="gallery__item reveal"><img src="public/corte_4.jpg" alt="Corte de cabelo" loading="lazy"></div>
+        <div class="gallery__item reveal"><img src="public/corte_5.webp" alt="Corte de cabelo" loading="lazy"></div>
+        <div class="gallery__item reveal"><img src="public/corte_6.jpg" alt="Corte de cabelo" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos" class="section section--dark testimonials">
+    <div class="container">
+      <p class="eyebrow reveal">Confiança</p>
+      <h2 class="section__title reveal">O que dizem nossos clientes</h2>
+
+      <div class="testimonials__grid">
+        <article class="testimonial reveal">
+          <div class="testimonial__stars" aria-label="5 de 5 estrelas">★★★★★</div>
+          <p class="testimonial__quote">“Melhor barbearia da região! Ambiente top e o pessoal é super atencioso. Saio sempre satisfeito.”</p>
+          <p class="testimonial__author">Rafael M. <span>— cliente desde 2019</span></p>
+        </article>
+        <article class="testimonial reveal">
+          <div class="testimonial__stars" aria-label="5 de 5 estrelas">★★★★★</div>
+          <p class="testimonial__quote">“Profissionais excelentes, sempre atualizados com as tendências. Recomendo demais!”</p>
+          <p class="testimonial__author">Bruno S. <span>— cliente desde 2021</span></p>
+        </article>
+        <article class="testimonial reveal">
+          <div class="testimonial__stars" aria-label="5 de 5 estrelas">★★★★★</div>
+          <p class="testimonial__quote">“Atendimento impecável, do café oferecido ao resultado final do corte. Virei cliente fiel.”</p>
+          <p class="testimonial__author">Diego A. <span>— cliente desde 2022</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCALIZAÇÃO -->
+  <section id="localizacao" class="section section--light location">
+    <div class="container location__grid">
+      <div class="location__info reveal">
+        <p class="eyebrow eyebrow--dark">Nos visite</p>
+        <h2 class="section__title">Onde Estamos</h2>
+
+        <ul class="info-list">
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-7.58-7-12a7 7 0 1 1 14 0c0 4.42-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <span>Rua Exemplo, 123 — Centro, São Paulo – SP</span>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.5 2.3.8 3.6.8.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3c.6 0 1 .4 1 1 0 1.3.3 2.5.8 3.6.1.3.1.7-.2 1l-2 2.2z"/></svg>
+            <span>(11) 99999-9999</span>
+          </li>
+          <li class="info-list__hours">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <div class="hours">
+              <div><span>Segunda a Sexta</span><span>09h às 20h</span></div>
+              <div><span>Sábado</span><span>09h às 18h</span></div>
+              <div><span>Domingo</span><span>Fechado</span></div>
+            </div>
+          </li>
+        </ul>
+
+        <a class="btn btn--primary" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Imp%C3%A9rio." target="_blank" rel="noopener">Falar no WhatsApp</a>
+      </div>
+
+      <div class="location__map reveal">
+        <iframe
+          title="Mapa de localização da Barbearia Império"
+          src="https://www.google.com/maps?q=-23.5505,-46.6333&z=15&output=embed"
+          width="100%" height="100%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section section--dark cta-final">
+    <div class="container cta-final__inner reveal">
+      <h2 class="cta-final__title">Pronto para o seu próximo corte?</h2>
+      <p class="cta-final__subtitle">Garanta seu horário e venha viver a experiência Império.</p>
+      <a class="btn btn--primary btn--lg" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Imp%C3%A9rio." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <a href="#inicio" class="logo logo--footer">Barbearia <span>Império</span></a>
+      <p class="footer__text">Tradição, estilo e navalha na mão desde 2009.</p>
+      <div class="footer__social">
+        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+        </a>
+        <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M14 8.5h-1.5A1.5 1.5 0 0 0 11 10v2H9.5v2H11v5h2v-5h1.6l.4-2H13v-1.5c0-.4.3-.5.5-.5H14z"/></svg>
+        </a>
+        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.9-1.3c1.5.8 3.3 1.3 5.1 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-3.2.8.9-3.1-.2-.3C3.7 14.5 3.2 13 3.2 12 3.2 7.1 7.1 3.2 12 3.2S20.8 7.1 20.8 12 16.9 20.2 12 20.2z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contato</h4>
+      <ul>
+        <li>Rua Exemplo, 123 — Centro, São Paulo – SP</li>
+        <li>(11) 99999-9999</li>
+        <li>contato@barbeariaimperio.com.br</li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Horário</h4>
+      <ul>
+        <li>Seg a Sex: 09h às 20h</li>
+        <li>Sábado: 09h às 18h</li>
+        <li>Domingo: Fechado</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <p>&copy; 2026 Barbearia Império. Todos os direitos reservados.</p>
+      <p>Desenvolvido por <a href="#">Webify</a></p>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Imp%C3%A9rio." target="_blank" rel="noopener" aria-label="Fale conosco no WhatsApp">
+  <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.9-1.3c1.5.8 3.3 1.3 5.1 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-3.2.8.9-3.1-.2-.3C3.7 14.5 3.2 13 3.2 12 3.2 7.1 7.1 3.2 12 3.2S20.8 7.1 20.8 12 16.9 20.2 12 20.2z"/><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.2-.6.9-.8 1.1-.1.2-.3.2-.5.1-1.6-.8-2.6-1.4-3.7-3.1-.3-.4.3-.4.8-1.3.1-.2 0-.4-.1-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.8.1.2 1.9 3 4.7 4.1 2.3.9 2.7.7 3.2.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.4-.3z"/></svg>
+</a>
+
+<button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
