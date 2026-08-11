@@ -8,6 +8,7 @@ Coleção de landing pages e catálogos online desenvolvidos como portfólio par
 |---|---|---|
 | Barbearia Império | Landing page | [`barbearia-imperio/`](barbearia-imperio/) |
 | Point do Açaí | Landing page + cardápio | [`point-do-acai/`](point-do-acai/) |
+| Ferro Bruto Box | Landing page | [`ferro-bruto-box/`](ferro-bruto-box/) |
 
 ## Padrão dos projetos
 
